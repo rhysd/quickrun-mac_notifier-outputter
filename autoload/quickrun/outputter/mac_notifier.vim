@@ -71,5 +71,9 @@ endfunction
 nnoremap <Plug>(outputter_mac_notifier_remove_notifications) :<C-u>call <SID>remove_notifications()<CR>
 "}}}
 
+" commands {{{
+command! MacNotifierClearNotification :<C-u>call <SID>remove_notifications()
+"}}}
+
 let &cpo = s:save_cpo
 unlet s:save_cpo
