@@ -1,4 +1,4 @@
-## mac\_notifier outputter for QuickRun
+# mac\_notifier outputter for QuickRun
 
 This is vim-quickrun outputter for MacOS X 10.8.
 This plugin outputs result of quickrun executing to a notification.
@@ -26,10 +26,10 @@ To get more information, execute `:help quickrun`
 
 ## Customization
 
-- `g:outputter_notifier_title` : Title of notification.
-- `g:outputter_notifier_id` : Id of notification. You often need not to care about this.
-- `<Plug>(outputter_notifier_remove_notifications)` : keymap for remove the notifications.
+- `g:outputter_mac_notifier_title` : Title of notification.
+- `g:outputter_mac_notifier_id` : Id of notification. You often need not to care about this.
+- `<Plug>(outputter_mac_notifier_remove_notifications)` : keymap for remove the notifications.
 
 ## Example
 
-    nmap <Leader>cl <Plug>(outputter_notifier_remove_notifications)
+    nmap <Leader>cl <Plug>(outputter_mac_notifier_remove_notifications)
