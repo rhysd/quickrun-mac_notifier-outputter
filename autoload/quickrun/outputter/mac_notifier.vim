@@ -2,7 +2,7 @@
 " License: MIT License http://www.opensource.org/licenses/mit-license.php
 
 " loading guard {{{
-if exists('g:quickrun_mac_notifier_outputter_loaded') || g:quickrun_mac_notifier_outputter_loaded
+if exists('g:quickrun_mac_notifier_outputter_loaded') && g:quickrun_mac_notifier_outputter_loaded
     finish
 endif
 let g:quickrun_mac_notifier_outputter_loaded = 1
