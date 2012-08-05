@@ -42,6 +42,7 @@ let s:has_vimproc = globpath(&rtp, 'autoload/vimproc.vim') != ''
 let s:outputter = quickrun#outputter#buffered#new()
 
 function! s:outputter.finish(session)
+    let result = escape(self._result, '"')
     if s:has_vimproc
         call vimproc#system('terminal-notifier -title "'. g:outputter_mac_notifier_title .
                            \'" -group ' . g:outputter_mac_notifier_id .
